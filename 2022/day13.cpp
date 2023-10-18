@@ -4,23 +4,25 @@
 #include <string>
 #include <vector>
 #include <iomanip>
+#include <algorithm>
+#include <cstdio>
 
 using namespace std;
 
 int main(){
 
-    string currentDay = "1";
+    string currentDay = "13";
     char delim = '\n';
+    int i,j,k;
 
     /* Opens the file and begins to read it in line by line */
     string line;
     fstream fin;
     fin.open("./inputs/day" + currentDay + ".txt");
 
-    //room for variables
+
 
     while(getline(fin, line, delim)){
-
         
 
 
