@@ -38,6 +38,7 @@
 .idea/
 *.code-workspace
 .DS_Store
+*/.DS_Store
 
 # CMake generated files
 CMakeFiles/
@@ -46,3 +47,6 @@ cmake_install.cmake
 Makefile
 CTestTestfile.cmake
 install_manifest.txt
+
+# input files and tmp outputs
+*.txt
