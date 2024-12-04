@@ -1,12 +1,9 @@
-import re
-
 #Boilerplate reading the file input
 def read_input(file_path):
   with open(file_path, 'r') as file:
     return file.readlines()
 d = read_input('./input.txt')
 
-# Ensure the input is read correctly
 d = [list(line.strip()) for line in d if line.strip()]
 
 def is_xmas(i, j, dir):
