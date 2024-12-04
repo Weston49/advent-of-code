@@ -6,7 +6,7 @@ d = read_input('./input.txt')
 
 d = [d[i].split() for i in range(len(d))]
 
-def is_report_safe(row):  
+def is_report_safe(row):
   return all((abs(int(row[i]) - int(row[i+1])) < 4) for i in range(len(row)-1)) and (all(int(row[i]) > int(row[i+1]) for i in range(len(row)-1)) or all(int(row[i]) < int(row[i+1]) for i in range(len(row)-1)))
 
 print("Part 1: ", sum(1 for report in d if is_report_safe(report)))
