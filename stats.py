@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 from datetime import datetime, timedelta
 
-url = "https://adventofcode.com/2024/leaderboard/private/view/2660382.json"
-aoc_session = os.getenv('aoc_session')
-headers = {'Cookie': f'session={aoc_session}'}
-request = urllib.request.Request(url, headers=headers)
-response = urllib.request.urlopen(request)
-data = json.loads(response.read())
-# with open('example.json', 'r') as file:
-#   data = json.load(file)
-# print(data)
+# url = "https://adventofcode.com/2024/leaderboard/private/view/2660382.json"
+# aoc_session = os.getenv('aoc_session')
+# headers = {'Cookie': f'session={aoc_session}'}
+# request = urllib.request.Request(url, headers=headers)
+# response = urllib.request.urlopen(request)
+# data = json.loads(response.read())
+with open('example.json', 'r') as file:
+  data = json.load(file)
+print(data)
 
 # Enable dark mode
 mpl.style.use('dark_background')
